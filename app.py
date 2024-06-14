@@ -40,3 +40,10 @@ def publish_message():
 
 if __name__ == '__main__':
    app.run(host='127.0.0.1', port=5000)
+
+
+"""Testar inserção:
+
+curl -X POST -H "Content-Type: application/json" -d '{"topic":"/flask/mqtt", "msg":"Quem gosta de professor é otario"}' http://127.0.0.1:5000/publish
+
+"""
